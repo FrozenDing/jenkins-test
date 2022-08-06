@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '0a780a78-1da1-4589-9f3b-f87566f741cd', url: 'https://gitee.com/dingrui665/jenkins-test.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '54de51f5-7715-4d57-8997-27cd451987c2', url: 'https://github.com/FrozenDing/jenkins-test.git']]])
             }
         }
         stage('build') {
